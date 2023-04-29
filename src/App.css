@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
+.logo{
+  display: flex;
+  flex-direction: row;
+ 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo-container{
+  display: flex;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #555;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logoText{
+  background: -webkit-linear-gradient(rgb(112, 242, 112), rgb(81, 179, 245));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Courier New', Courier, monospace;
+  font-size:22px;
+  margin-left: 12px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.homePageWrapper{
+  justify-content: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.inputGroup{
+  display: flex;
+flex-direction: column;
+}
+
+h1,h4,span,p{
+  color: aliceblue;
+}
+
+.createNewBtn{
+  text-decoration: none;
+  color: green ;
+}
+
+.joinBtn {
+  background-color: green;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.btn{
+  border: 0;
+  border-width: 0;
+  border-radius: 10px;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input{
+  border-radius: 10px;
+  border-width: 0;
+
+  margin-bottom:15px;
+  padding: 10px 20px;
+}
+
+
+input:focus{
+  border: 3px solid #555;
+  background-color: rebeccapurple;
+  color: aliceblue;
+  outline: none;
+}
+
+.formWrapper{
+  /* background-color: red; */
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px 50px;
+  border: 3px solid #25202f;
+}
+
+.createInfo{
+  margin-top: 10px;
+}
+
+
+.mainWrap{
+  /* padding: 10px 20px; */
+  display: grid;
+  grid-template-columns: 230px 1fr;
+}
+.aside{
+  background-color: #1c1e29;
+  padding: 16px;
+  height: 94vh;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+}
+
+.asideInner{
+  flex:1
+}
+
+.clientsList{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.client{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.copyBtn{
+  background-color: rgb(2, 69, 2);
+  color: white;
+  margin-bottom: 10px;
+  
+}
+
+.copyBtn:hover{
+  background-color: rgb(2, 50, 2);  
+  cursor: pointer;
+}
+
+.userName{
+  margin-top: 5px;
+}
+
+.leaveBtn{
+  background-color: rgb(248, 56, 22);
+  color: white;
+}
+.leaveBtn:hover{
+  background-color: rgb(193, 34, 6);
+  cursor: pointer;
 }
