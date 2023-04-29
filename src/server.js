@@ -62,6 +62,11 @@ io.on("connection", (socket) => {
       delete userSocketMap[socket.id];
       socket.leave();
     });
+
+    socket.on("codeChange", ({ roomId, code }) => {
+      console.log("roomId");
+      socket.in(roomId).emit("codeChange", { code });
+    });
   });
 });
 
